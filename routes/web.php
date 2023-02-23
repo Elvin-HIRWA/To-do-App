@@ -1,6 +1,6 @@
 <?php
 
-
+use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'checkUserLogedIn'], function () {
     Route::get("/login", \App\Http\Livewire\Login::class)->name('login');
